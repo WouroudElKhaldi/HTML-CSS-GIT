@@ -12,7 +12,7 @@
   <body>
     <div class="site-wrapper">
       <div class="site-header">
-        <div class="site-header__title">C.Y.F</div>
+        <div class="site-header__title">Codi</div>
         <div class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
@@ -54,22 +54,24 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
             <input type="text" name="name" id="name" required />
           </div>
           <div class="contact-form__field">
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" required />
           </div>
-          <div class="contact-form__field">
-            <fieldset>
+          <div>
+            <fieldset class="contact-form__field">
               <legend>What branch are you interested in?</legend>
-              <input type="radio" name="branch" id="london" value="london" />
-              <label for="london">London</label>
-              <input type="radio" name="branch" id="glasgow" value="glasgow" />
-              <label for="glasgow">Glasgow</label>
-              <input type="radio" name="branch" id="manchester" value="manchester" />
-              <label for="manchester">Manchester</label>
+              <label for="london"
+                >London <input type="radio" name="branch" id="london" value="london"
+              /></label>
+              <label for="glasgow"
+                >Glasgow <input type="radio" name="branch" id="glasgow" value="glasgow"
+              /></label>
+              <label for="manchester"
+                >Manchester <input type="radio" name="branch" id="manchester" value="manchester"
+              /></label>
             </fieldset>
           </div>
           <div class="contact-form__field">
@@ -78,7 +80,7 @@
               name="message"
               placeholder="Your message should not be longer than 200 words."
               id="message"
-              required
+              required="required"
             ></textarea>
           </div>
           <button type="submit">Send</button>

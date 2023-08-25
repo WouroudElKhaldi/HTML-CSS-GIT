@@ -41,3 +41,8 @@
   max-width: 50em;
   line-height: 2;
 }
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+}
